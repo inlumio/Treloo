@@ -1,14 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Treloo</title>
+<html lang="en_GB">
 
-		<link rel="stylesheet" href="style.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Treloo</title>
 
-		<script src="./main.js" defer></script>
-	</head>
-	<body></body>
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- JS -->
+	<script src="./main.js" defer></script>
+</head>
+
+<body>
+
+	<header class="header">
+		<section class="header__sticky">
+			<div class="wrapper">
+				<a href="#" class="header__logo">Treloo</a>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#" class="nav__link">Review</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Tips</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Alerts</a></li>
+						<li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+						<li class="nav__item"><a href="#" class="nav__link nav__btn">Blog</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<section class="header__intro">
+			<div class="wrapper">
+				<h1 class="heading-1 intro__heading">Discover Your Life, Travel Where You Want</h1>
+				<h4 class="subheading-1 intro__subheading">
+					Would you explore natur paradise in the world, let’s find the best destination in world with us.
+				</h4>
+			</div>
+
+		</section>
+	</header>
+	<main class="page">
+		<section class="booking">
+			<div class="wrapper">
+				<div class="booking__tabs-container">
+					<button class="booking__tab" data-type="flight" area-selected="true">
+						<img src="./assets/icon-plane.png" alt="">
+						Flight
+					</button>
+					<button class="booking__tab" data-type="hotel" area-selected="false">
+						<img src="./assets/icon-hotel.png" alt="">
+						Hotel
+					</button>
+				</div>
+				<div class="booking__search">
+					<form action="" class="search__form ">
+						<fieldset class="search__fields fields-place">
+							<div class="search__field ">
+								<label for="from">Leaving From</label>
+								<input type="text" placeholder="Destination" id="from" value="London">
+							</div>
+							<img src="./assets/icon-plane-gray.png" alt="" class="field__icon">
+							<div class="search__field">
+								<label for="to">Going to</label>
+								<input type="text" placeholder="Destination" id="to" value="New York">
+							</div>
+						</fieldset>
+						<fieldset class="search__fields fields-time">
+							<div class="search__field field-leave ">
+								<label for="leave">
+									Leave
+									<img src="./assets/icon-plane.png" alt="">
+								</label>
+								<input type="date" placeholder="Leave" id="leave">
+							</div>
+							<img src="./assets/icon-planner.png" alt="" class="field__icon">
+							<div class="search__field field-return ">
+								<label for="return">
+									Return
+									<img src="./assets/icon-plane.png" alt="">
+								</label>
+								<input type="date" placeholder="Return" id="return">
+							</div>
+						</fieldset>
+						<button class="btn-search">
+							<img src="./assets/icon-search.png" alt="">
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="fake"></section>
+		<section class="fake"></section>
+		<section class="fake"></section>
+		<section class="fake"></section>
+		<section class="fake"></section>
+		<section class="recommends">
+
+		</section>
+	</main>
+</body>
+
 </html>
